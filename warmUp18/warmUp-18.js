@@ -23,7 +23,16 @@
         toCamelCase("the-stealth-warrior") // returns "theStealthWarrior"
 
         toCamelCase("The_Stealth_Warrior") // returns "TheStealthWarrior"
-    
+
+
+}
+
+        
+
+
+
+
+
     3. In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
         Example
 
@@ -31,3 +40,40 @@
             filter_list([1,'a','b',0,15]) == [1,0,15]
             filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 */
+
+//3
+function filterList(array){
+    var newArray=[];
+    for (var i=0 ; i<array.length ; i++ )  {
+        if (typeof(array[i])==="number") {
+            newArray.push(array[i])
+        }
+    }
+    return newArray
+}
+
+//2
+
+function toCamelCase(str) {
+
+    if (str.includes("_")) {
+        var array1 =str.split("_")
+        var newArray=[]
+        for (var i =0 ; i<array1.length ; i++) {
+            newArray.push(array1[i])
+        }
+        return newArray.join("")
+    }
+    
+    else if (str.includes("-")) {
+    var array2 =str.split("-")
+        var newArray=[]
+        for (var i =0 ; i<array2.length ; i++) {
+            newArray.push(array2[i])
+        }
+        return newArray.join("")
+    }
+}
+
+
+//1
