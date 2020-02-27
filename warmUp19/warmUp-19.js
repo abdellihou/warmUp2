@@ -17,7 +17,23 @@ Input: [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
 */
+function maxProfit(array) {
+  var max=0;
+  var min =Infinity ;
+  
 
-var maxProfit = function(prices) {
-  // YOUR CODE HERE
-};
+      for (var i=1 ; i<array.length ;i++) {
+      if (array[i]>max) {
+          max=array[i];
+          }
+      }
+       for (var i=0 ; i<array.length-1 ; i++ ) {
+       if (array[i]<min) {
+          min=array[i]
+
+            }
+      } 
+      return max-min
+}
+
+//  i didnt understood well the question
