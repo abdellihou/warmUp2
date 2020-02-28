@@ -4,3 +4,17 @@
 //
 //
 // Note : you can`t use any built-in functions .
+
+
+
+
+function reverseStr(str) {
+    var word="";
+    var array =str.split(" ") ;
+   var newArray=[];
+        for (var i=array.length-1 ; i>=0 ; i--) {
+           newArray.push(array[i])
+        }
+       
+        return newArray.join(" ")
+}
