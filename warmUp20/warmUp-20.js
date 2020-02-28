@@ -9,7 +9,6 @@
 
 
 function reverseStr(str) {
-    var word="";
     var array =str.split(" ") ;
    var newArray=[];
         for (var i=array.length-1 ; i>=0 ; i--) {
