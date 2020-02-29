@@ -16,3 +16,47 @@
 // Constraints:
 // 1 <= text.length <= 10^4
 // text consists of lower case English letters only.
+
+
+
+function balloon (text) {
+    var newArray=[]
+    var array=text.split("")
+    var countB=0
+    var countA=0
+    var countL=0
+    var countO=0
+    var countN=0
+
+for (var i=0 ; i<array.length ; i++) {
+            if(array[i].includes("b")) {
+                countB=countB+1;
+                newArray.push(array[i]);
+            } 
+            if(array[i].includes("a")) {
+                countB=countB+1;
+                newArray.push(array[i]);
+            } 
+            if(array[i].includes("l")) {
+                countL=countL+1;
+                newArray.push(array[i]);
+            } 
+            if(array[i].includes("l")) {
+                countL=countL+1;
+                newArray.push(array[i]);
+            } 
+            if(array[i].includes("o")) {
+                countO=countO+1;
+                newArray.push(array[i]);
+            }
+            if(array[i].includes("o")) {
+                countO=countO+1;
+                newArray.push(array[i]);
+            }
+            if(array[i].includes("o")) {
+                countO=countO+1;
+                newArray.push(array[i]);
+            }      
+}
+return newArray
+}
